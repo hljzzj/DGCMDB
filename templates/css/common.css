@@ -1,0 +1,24 @@
+#hnav li a:hover{
+    background-color: #454648;
+    color: #fff;
+}
+#hnav li a {
+    padding: 0 25px;
+        padding-top: 0px;
+        padding-right: 25px;
+        padding-bottom: 0px;
+        padding-left: 25px;
+    line-height: 50px;
+    display: block;
+    color: #8C8C8C;
+    font-size: 14px;
+    transition: background-color ease .3s;
+}
+
+a {
+    text-decoration: none;
+    text-decoration-color: -moz-use-text-color;
+    text-decoration-line: none;
+    text-decoration-style: solid;
+    color: #009F5D;
+}
