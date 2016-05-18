@@ -7,16 +7,15 @@ class UserInfo(models.Model):
     username = models.CharField(max_length=50)
     password = models.CharField(max_length=50)
     WorkGroup = models.CharField(max_length=50)
-    CreateDate = models.DateTimeField()
-    Logintime = models.DateTimeField()
+    CreateDate = models.DateTimeField(default='2016-12-12 12:12')
+    Logintime = models.DateTimeField(default='2016-12-12 12:12')
     LoginIP = models.CharField(max_length=16)
     Super = models.CharField(max_length=10)
 
 
 class IPInfo(models.Model):
+    IP = models.CharField(max_length=50)
 
-
-class WorkGroup(models.Model):
-    ID = models.IntegerField():
-    WorkGroup = models.CharField(max_length=50)
+class danwei(models.Model):
+    workname = models.CharField(max_length=50)
 
