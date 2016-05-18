@@ -9,67 +9,19 @@
     <meta name="applicable-device" content="pc,mobile">
     <meta http-equiv="Cache-Control" content="no-transform">
     <meta http-equiv="Cache-Control" content="no-siteapp">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="../static/css/style.css" rel="stylesheet" type="text/css">
     <script>var SitePath='/',SiteAid='10',SiteTid='',SiteId='';</script>
-    <script src="js/jquery.js"></script>
-    <script src="js/js.js" data-main="indexMain"></script>
-    <script src="js/home.js"></script>
-   <!-- <style type="text/css">
-        img.wp-smiley,img.emoji{
-        display:inline!important;
-        border:none!important;
-        box-shadow:none!important;
-        height:1em!important;
-        width:1em!important;
-        margin:0 .07em!important;
-        vertical-align:-0.1em!important;
-        background:none!important;
-        padding:0!important;
-        }
-    </style>-->
-    <!--<script>
-        try {
-            for(var lastpass_iter=0; lastpass_iter < document.forms.length; lastpass_iter++){
-                var lastpass_f = document.forms[lastpass_iter];
-                if(typeof(lastpass_f.lpsubmitorig)=="undefined"){
-                    if (typeof(lastpass_f.submit) == "function") {
-                        lastpass_f.lpsubmitorig = lastpass_f.submit;
-                        lastpass_f.submit = function(){
-                            var form = this;
-                            try {
-                                if (document.documentElement && 'createEvent' in document)
-                                {
-                                    var forms = document.getElementsByTagName('form');
-                                    for (var i=0 ; i<forms.length ; ++i)
-                                        if (forms[i]==form)
-                                        {
-                                            var element = document.createElement('lpformsubmitdataelement');
-                                            element.setAttribute('formnum',i);
-                                            element.setAttribute('from','submithook');
-                                            document.documentElement.appendChild(element);
-                                            var evt = document.createEvent('Events');
-                                            evt.initEvent('lpformsubmit',true,false);
-                                            element.dispatchEvent(evt);
-                                            break;
-                                        }
-                                }
-                            } catch (e) {}
-                            try {
-                                form.lpsubmitorig();
-                            } catch (e) {}
-                        }
-                    }
-                }
-            }
-        } catch (e) {}
-    </script>-->
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/js.js" data-main="indexMain"></script>
+    <script src="../static/js/home.js"></script>
+
 </head>
 
 <body>
 <div id="header">
     <div id="headerbody" class="automw">
         <div class="autocw ">
-            <a href="/" id="hlogo"><img src="images/logo.png" alt="通信运维综合管理平台"></a>
+            <a href="/" id="hlogo"><img src="../static/images/logo.png" alt="通信运维综合管理平台"></a>
             <div id="nav">
             <ul>
                 <li class="first"><a href="#">概&nbsp;&nbsp;况</a>

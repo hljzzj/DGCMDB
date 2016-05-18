@@ -4,5 +4,7 @@ from django.http.response import HttpResponse
 
 
 def index(request,kwargs):
-    return HttpResponse('index')
+    return HttpResponse('index.html')
 
+def index(request):
+    return render(request,'index.html',locals())

@@ -15,14 +15,16 @@ Including another URLconf
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from activator import process
+from website.views import index
+
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    #url(r'^$','index',name='index'),
-    ('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<page>(\d+))/(?P<id>(\d+))/$', process),
-    ('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<id>(\d+))/$', process),
-    ('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
-    ('^(?P<app>(\w+))/$', process, {'function': 'index'}),
-    ('^$', process, {'function': 'index'}),
+    url(r'^$',index,name='index'),
+    #('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<page>(\d+))/(?P<id>(\d+))/$', process),
+    #('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<id>(\d+))/$', process),
+    #('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
+    #('^(?P<app>(\w+))/$', process, {'function': 'index'}),
+    #('^$', process, {'function': 'index'}),
 )
 
