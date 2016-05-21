@@ -38,3 +38,50 @@ class IPInfo(models.Model):
 
     worknameid = models.IntegerField(default='1')
     IP = models.GenericIPAddressField(protocol='ipv4')
+
+
+#工作记录
+class workcate(models.Model):       #工作分类
+    workcate = models.CharField(max_length=50)
+
+class computercate(models.Model):       #计算机工作表
+    work = models.IntegerField()
+
+
+#资产管理
+
+class AssetsClass(models.Model):
+    assetsclass = models.CharField(max_length=50,verbose_name='资产分类')
+
+
+class AssetsWalkie(models.Model):       #对讲机库存
+    Wid = models.IntegerField(max_length=4,verbose_name='对讲机编号')
+    walkiemodel = models.IntegerField(verbose_name='对讲机型号')
+    number = models.IntegerField(verbose_name='对讲机数量')
+
+class OutAssetsWalkie(models.Model):        #对讲机外出
+    outstocktime = models.DateTimeField(verbose_name='出库时间')
+    Wid = models.IntegerField(max_length=4,verbose_name='对讲机编号')
+    walkiemodel = models.IntegerField(verbose_name='对讲机型号')
+    number = models.IntegerField(verbose_name='对讲机数量')
+    outtype = models.IntegerField(verbose_name='出库类型')
+    work = models.IntegerField(verbose_name='领用部门')
+    Recipient = models.CharField(max_length=20,verbose_name='领用人')
+    phone1 = models.CharField(max_length=11, verbose_name='信用人电话')
+    administrator = models.CharField(max_length=20,verbose_name='管理员')
+    phone2 = models.CharField(max_length=11,verbose_name='管理员电话')
+    charger = models.IntegerField(verbose_name='充电器数量')
+    headset = models.IntegerField(verbose_name='耳麦数量')
+    walkiereturn = models.BooleanField(verbose_name="是否归还")
+class StorageAssetsWalkie(models.Model):     #对讲机入库
+    Wid = models.IntegerField(max_length=4,verbose_name='对讲机编号')
+    walkiemodel = models.IntegerField(verbose_name='对讲机型号')
+    number = models.IntegerField(verbose_name='对讲机数量')
+    storagetime = models.DateTimeField(verbose_name='入库时间')
+
+
+class WalkieModel(models.Model):
+    walkiemodel = models.CharField(max_length=20,verbose_name='对讲机型号')
+
+class OutType(models.Model):
+    outtype = models.CharField(max_length=20,verbose_name='出库类型')
