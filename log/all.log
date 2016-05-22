@@ -294,3 +294,7 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
 2016-05-20 23:19:05,640 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.036) SET SQL_AUTO_IS_NULL = 0; args=None
 2016-05-20 23:19:05,680 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.040) SHOW FULL TABLES; args=None
 2016-05-20 23:19:05,724 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.039) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-05-22 04:52:29,703 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.040) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-05-22 04:52:30,043 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.040) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-05-22 04:52:30,087 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.044) SHOW FULL TABLES; args=None
+2016-05-22 04:52:30,151 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.043) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()

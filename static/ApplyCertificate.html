@@ -30,7 +30,7 @@
             <div id="headerCon" class="header-con">
                 <div class="head-nav">
                     <ul>
-                        <li class="on"><a class="link" href="/">概况</a></li>
+                        <li class="menu"><a class="link" href="/">概况</a></li>
                         <li class="menu" onmouseover="this.className='menu menu-cur'" onmouseleave="this.className='menu'">
                             <a class="link">运维</a>
                             <div class="menu-list">
@@ -42,7 +42,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li class="menu" onmouseover="this.className='menu menu-cur'" onmouseleave="this.className='menu'">
+                        <li class="on" onmouseover="this.className='menu menu-cur'" onmouseleave="this.className='menu'">
                             <a class="link">申请</a>
                             <div class="menu-list">
                                 <div class="list">
@@ -127,7 +127,66 @@
     <!--/.header-area-->
 </div></br>
 
-<div>中间内容</div>
+<div>
+    <div>
+        <div>
+            <div>
+                <form action="" method="post" class="smart-green">
+                    <h1>数字证书在线申请</h1>
+                    <label>
+                        一级部门 :<input id="name" type="text" name="name" />
+                        二级部门 :<input id="name" type="text" name="name"/>
+                        三级部门 :<input id="name" type="text" name="name"/>
+                    </label>
+
+                    <label>
+                        姓  名 :<input id="name" type="text" name="name" placeholder="" />
+                        性别 :
+                        男:<input  id="sex" type="radio" value="1"/>
+                        女:<input  id="sex" type="radio" value="0" />
+                        身份证 :<input class="sfz" id="name" type="text" name="name" placeholder="" />
+                    </label>
+
+                    <label>
+                        <span>职务 :</span>
+                        <select class="select">
+                            <option value="none" selected="selected">请选择</option>
+                            <option value="科员">科员</option>
+                            <option value="科员">正科</option>
+                            <option value="科员">副科</option>
+
+                        </select>
+                        <span>职级 :</span>
+                        <select class="select">
+                            <option value="none" selected="selected">请选择</option>
+                            <option value="科员">科员</option>
+                            <option value="科员">正科</option>
+                            <option value="科员">副科</option>
+                        </select>
+                    </label>
+
+                    <label>
+                        <span>申请原因</span>
+                        <textarea id="message" name="message" ></textarea>
+                    </label>
+                    <label>
+                        <span>Subject :</span>
+                            <select name="selection">
+                                <option value="Job Inquiry">Job Inquiry</option>
+                                <option value="General Question">General Question</option>
+                            </select>
+                    </label>
+                    <label>
+                        <span>&nbsp;</span>
+                        <input type="button" class="button" value="Send" />
+                    </label>
+                </form>
+
+            </div>
+
+        </div>
+    </div>
+</div>
 
 <div id="foot">底部内容</div>
 
