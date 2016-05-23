@@ -98,6 +98,13 @@ a:hover {
 .page-home {
 	padding:85px 0 0 230px
 }
+.page-form{
+	border-bottom:1px solid #89AF4C;
+	width: 800px;
+	margin-left:auto;
+	margin-right:auto;
+}
+
 .header-area,.footer-area {
 	padding-left:230px
 }
@@ -336,6 +343,7 @@ i {
 }
 body {
     font: 12px/1.5 Arial,Tahoma,"Hiragino Sans GB","宋体";
+	font-family: Arial,'Hiragino Sans GB','Microsoft Yahei',sans-serif;
     color: #333;
     background: transparent;
     -webkit-font-smoothing: antialiased;
@@ -351,7 +359,15 @@ body {
 	width: 100px;
 }
 /*菜单结束*/
-
+.hengxian{
+	margin:0;
+	padding:0;
+	width:80%;
+	height:1px;
+	background-color:#EFEFEF;
+	overflow:hidden;
+	margin-top: 15px;"
+}
 /*表单样式开始*/
 .smart-green {
 	margin-left:auto;
@@ -359,8 +375,8 @@ body {
 	margin-top: 2px;
 	max-width: 800px;
 	background: #F8F8F8;
-	padding: 30px 30px 20px 30px;
-	font: 14px Arial, Helvetica, sans-serif;
+	padding: 50px 30px 20px 30px;
+	font: 14px Arial,Tahoma,"Hiragino Sans GB","宋体";
 	color: #000;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -368,9 +384,9 @@ body {
 }
 .smart-green h1 {
 	font-size:24px;
-	padding: 20px 0px 20px 40px;
+	padding: 20px 0px 20px 0px;
 	display: block;
-	margin: -30px -30px 10px -30px;
+	margin: -50px -30px 10px -30px;
 	color: #ff3c00;
 	background: #F8F8F8;
 	text-shadow: 1px 1px 1px #949494;
@@ -379,6 +395,7 @@ body {
 	-moz-border-radius: 5px 5px 0px 0px;
 	border-bottom:1px solid #89AF4C;
 	text-align: center;
+
 }
 .smart-green h1>span {
 	display: block;
@@ -389,6 +406,13 @@ body {
 	margin-right: 15px;
 	display: inline;
 	line-height:50px;
+}
+.smart-green hr{
+	margin:0px;
+	height:1px;
+	border:0px;
+	background-color:#D5D5D5;
+	color:#D5D5D5;
 }
 .smart-green .divleft{
 	float: left;
@@ -424,8 +448,6 @@ body {
 	padding-top: 10px;
 }
 .smart-green select {
-	background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
-	background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
 	appearance:none;
 	-webkit-appearance:none;
 	-moz-appearance: none;
@@ -435,8 +457,6 @@ body {
 	height:30px;
 }
 .smart-green .select {
-	background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
-	background: url('down-arrow.png') no-repeat right, -webkit-gradient(linear, left top, left bottom, color-stop(0%,#FBFBFB), color-stop(100%,#E9E9E9));
 	appearance:none;
 	-webkit-appearance:none;
 	-moz-appearance: none;
@@ -451,11 +471,13 @@ body {
 	-webkit-border-radius: 5px;
 	-moz-border-border-radius: 5px;
 	border: none;
-	padding: 10px 25px 10px 25px;
+	padding: 8px 25px 10px 25px;
 	color: #FFF;
 	text-shadow: 1px 1px 1px #949494;
+	margin:0 auto;
 }
 .smart-green .button:hover {
 	background-color:#80A24A;
 }
+
 /*表单样式结束*/
