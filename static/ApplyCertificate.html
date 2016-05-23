@@ -134,51 +134,86 @@
                 <form action="" method="post" class="smart-green">
                     <h1>数字证书在线申请</h1>
                     <label>
+                        <span>所属部门</span>
                         一级部门 :<input id="name" type="text" name="name" />
                         二级部门 :<input id="name" type="text" name="name"/>
                         三级部门 :<input id="name" type="text" name="name"/>
                     </label>
 
                     <label>
-                        姓  名 :<input id="name" type="text" name="name" placeholder="" />
-                        性别 :
-                        男:<input  id="sex" type="radio" value="1"/>
-                        女:<input  id="sex" type="radio" value="0" />
-                        身份证 :<input class="sfz" id="name" type="text" name="name" placeholder="" />
+                        <div >姓名 :<input id="name" type="text" name="name" placeholder="" /></div>
+                        <div ><span>性别 :</span>
+                        <select class="select">
+                            <option value="none" selected="selected">请选择</option>
+                            <option value="1">男</option>
+                            <option value="0">女</option>
+                        </select></div>
+                        <div class="phone">电话 :<input id="name" type="text" name="name" placeholder="" /></div>
+                        <div class="sfz">身份证 :<input id="name" type="text" name="name" maxlength="18" /></div>
                     </label>
-
                     <label>
-                        <span>职务 :</span>
+                        <div><span>任职 :</span>
+                        <select class="select">
+                            <option value="none" selected="selected">请选择</option>
+                            <option value="科员">正职</option>
+                            <option value="科员">副职</option>
+                            <option value="科员">其它</option>
+
+                        </select></div>
+                        <div><span>职级 :</span>
                         <select class="select">
                             <option value="none" selected="selected">请选择</option>
                             <option value="科员">科员</option>
                             <option value="科员">正科</option>
                             <option value="科员">副科</option>
-
-                        </select>
-                        <span>职级 :</span>
+                        </select></div>
+                        <div><span>工作岗位 :</span>
                         <select class="select">
                             <option value="none" selected="selected">请选择</option>
                             <option value="科员">科员</option>
                             <option value="科员">正科</option>
                             <option value="科员">副科</option>
-                        </select>
+                        </select></div>
+                        <div><span>警种 :</span>
+                        <select class="select">
+                            <option value="none" selected="selected">请选择</option>
+                            <option value="科员">国保</option>
+                            <option value="科员">经侦</option>
+                            <option value="科员">治安</option>
+                            <option value="科员">边防</option>
+                            <option value="科员">刑侦</option>
+                            <option value="科员">出入境</option>
+                            <option value="科员">消防</option>
+                            <option value="科员">网警</option>
+                            <option value="科员">行动技术</option>
+                            <option value="科员">监所管理</option>
+                            <option value="科员">交通管理</option>
+                            <option value="科员">法制</option>
+                            <option value="科员">装备财务</option>
+                            <option value="科员">禁毒</option>
+                            <option value="科员">信息通信</option>
+                            <option value="科员">办公室</option>
+                            <option value="科员">纪委</option>
+                            <option value="科员">督察</option>
+                            <option value="科员">政工</option>
+                            <option value="科员">人事</option>
+                            <option value="科员">机关党委</option>
+                            <option value="科员">派出所</option>
+
+                        </select></div>
                     </label>
 
                     <label>
-                        <span>申请原因</span>
-                        <textarea id="message" name="message" ></textarea>
+                        <div style="float: left;"><span>通信地址</span>
+                        <input id="" type="text" name=""></div>
                     </label>
                     <label>
-                        <span>Subject :</span>
-                            <select name="selection">
-                                <option value="Job Inquiry">Job Inquiry</option>
-                                <option value="General Question">General Question</option>
-                            </select>
+                        <div style="float: left;"><span>电子邮件</span>
+                        <input id="" type="email" name=""></div>
                     </label>
                     <label>
-                        <span>&nbsp;</span>
-                        <input type="button" class="button" value="Send" />
+                        <div><span>&nbsp;</span>
+                        <input type="button" class="button" value="提交" /></div>
                     </label>
                 </form>
 

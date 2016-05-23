@@ -342,20 +342,25 @@ body {
 	margin-top:48px;
 }
 .sfz{
-	width: 200px;
+	width: 60%;
+}
+.sfz input{
 	letter-spacing: 3px;
 }
-
+.phone input{
+	width: 100px;
+}
 /*菜单结束*/
 
 /*表单样式开始*/
 .smart-green {
 	margin-left:auto;
 	margin-right:auto;
+	margin-top: 2px;
 	max-width: 800px;
 	background: #F8F8F8;
 	padding: 30px 30px 20px 30px;
-	font: 12px Arial, Helvetica, sans-serif;
+	font: 14px Arial, Helvetica, sans-serif;
 	color: #000;
 	border-radius: 5px;
 	-webkit-border-radius: 5px;
@@ -380,7 +385,17 @@ body {
 	font-size: 14px;
 	color: #FFF;
 }
-
+.smart-green div{
+	margin-right: 15px;
+	display: inline;
+	line-height:50px;
+}
+.smart-green .divleft{
+	float: left;
+}
+.smart-green .divright{
+	float: right;
+}
 .smart-green label {
 	display: block;
 	margin: 0px 0px 5px;
@@ -407,9 +422,6 @@ body {
 .smart-green textarea{
 	height:100px;
 	padding-top: 10px;
-}
-.smart-green {
-	margin-top: 2px;
 }
 .smart-green select {
 	background: url('down-arrow.png') no-repeat right, -moz-linear-gradient(top, #FBFBFB 0%, #E9E9E9 100%);
