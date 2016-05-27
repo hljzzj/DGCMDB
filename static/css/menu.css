@@ -359,15 +359,12 @@ body {
 	width: 100px;
 }
 /*菜单结束*/
-.hengxian{
-	margin:0;
-	padding:0;
-	width:80%;
-	height:1px;
-	background-color:#EFEFEF;
-	overflow:hidden;
-	margin-top: 15px;"
+.radioclass{
+	vertical-align: text-bottom;
+	margin-bottom: -7px;
+
 }
+
 /*表单样式开始*/
 .smart-green {
 	margin-left:auto;
