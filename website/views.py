@@ -7,4 +7,4 @@ def index(request,kwargs):
     return HttpResponse('index.html')
 
 def index(request):
-    return render(request,'index.html',locals())
+    return render(request, 'index.html', locals())

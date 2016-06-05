@@ -9,3 +9,108 @@
 2016-05-22 04:54:53,522 [Thread-7:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
 2016-05-22 04:54:53,625 [Thread-10:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
 2016-05-22 04:54:53,659 [Thread-11:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-04 13:15:40,122 [Thread-2:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:15:46,969 [Thread-5:123145323335680] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:04,282 [Thread-11:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:09,115 [Thread-28:123145335955456] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-04 13:16:09,146 [Thread-29:123145335955456] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-04 13:16:21,777 [Thread-16:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:43,605 [Thread-32:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:46,342 [Thread-38:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:53,346 [Thread-42:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:53,508 [Thread-43:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/ico/favicon.png
+2016-06-04 13:16:56,570 [Thread-46:123145327542272] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:16:57,851 [Thread-52:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /assets/css/bootstrap-responsive.css
+2016-06-04 13:17:52,964 [Thread-63:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-04 13:17:53,020 [Thread-64:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-04 13:18:04,837 [Thread-70:123145331748864] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-04 13:18:37,624 [Thread-84:123145340162048] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-04 13:18:48,185 [Thread-85:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 12:33:20,311 [Thread-9:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 12:35:55,226 [Thread-17:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 12:35:59,246 [Thread-19:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 12:39:14,924 [Thread-27:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:09:11,652 [Thread-35:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:09:19,113 [Thread-36:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:09:49,454 [Thread-44:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:09:50,782 [Thread-52:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:10:48,784 [Thread-60:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:13:22,023 [Thread-68:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:20:35,451 [Thread-76:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:20:42,459 [Thread-77:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /work.html
+2016-06-05 13:25:34,742 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 10, in index
+    return render(request,'index.html',locals())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 67, in render
+    template_name, context, request=request, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 46, in get_template
+    raise TemplateDoesNotExist(template_name)
+TemplateDoesNotExist: index.html
+2016-06-05 13:25:44,823 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /work.html
+2016-06-05 13:26:11,132 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/menu.css
+2016-06-05 13:26:11,143 [Thread-4:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:26:11,151 [Thread-5:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:26:11,157 [Thread-6:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:26:11,213 [Thread-7:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:26:11,235 [Thread-8:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:26:11,267 [Thread-9:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:26:13,343 [Thread-11:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/menu.css
+2016-06-05 13:26:13,351 [Thread-12:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:26:13,365 [Thread-13:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:26:13,375 [Thread-14:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:26:13,393 [Thread-15:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:26:13,405 [Thread-16:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:26:13,414 [Thread-17:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:29:02,115 [Thread-19:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/menu.css
+2016-06-05 13:29:02,121 [Thread-20:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:29:02,129 [Thread-21:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:29:02,131 [Thread-22:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:29:02,146 [Thread-23:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:29:49,436 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:29:49,444 [Thread-4:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:29:49,451 [Thread-5:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/menu.css
+2016-06-05 13:29:49,452 [Thread-6:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:29:49,538 [Thread-7:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:29:49,553 [Thread-8:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:29:49,568 [Thread-9:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:30:59,264 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /css/menu.css
+2016-06-05 13:30:59,272 [Thread-4:123145314922496] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:30:59,278 [Thread-5:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:30:59,280 [Thread-6:123145319129088] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:30:59,338 [Thread-7:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/jquery.js
+2016-06-05 13:30:59,361 [Thread-8:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/js.js
+2016-06-05 13:30:59,394 [Thread-9:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /js/home.js
+2016-06-05 13:31:45,361 [Thread-9:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:31:50,056 [Thread-11:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:32:43,610 [Thread-14:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:32:47,179 [Thread-15:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:51,383 [Thread-16:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:52,419 [Thread-17:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:53,083 [Thread-18:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:53,611 [Thread-19:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:54,015 [Thread-20:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:55,028 [Thread-21:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:56,021 [Thread-22:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:56,987 [Thread-23:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:57,732 [Thread-24:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:32:59,435 [Thread-25:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:33:51,848 [Thread-26:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:33:55,693 [Thread-28:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:33:58,094 [Thread-30:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:34:27,857 [Thread-32:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:34:29,469 [Thread-40:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:34:30,448 [Thread-48:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:34:33,066 [Thread-49:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate.html
+2016-06-05 13:35:23,093 [Thread-51:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:35:25,259 [Thread-52:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /active/ApplyCertificate.html
+2016-06-05 13:37:01,075 [Thread-60:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:37:06,029 [Thread-62:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:37:09,682 [Thread-64:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:37:13,507 [Thread-66:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 13:40:59,090 [Thread-74:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-05 16:14:19,209 [Thread-82:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
