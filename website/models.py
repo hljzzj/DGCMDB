@@ -52,8 +52,10 @@ class computercate(models.Model):       #计算机工作表
 
 class AssetsClass(models.Model):
     assetsclass = models.CharField(max_length=50,verbose_name='资产分类')
+class OutType(models.Model):
+    outtype = models.CharField(max_length=20,verbose_name='出库类型')
 
-
+#对讲机
 class AssetsWalkie(models.Model):       #对讲机库存
     Wid = models.IntegerField(max_length=4,verbose_name='对讲机编号')
     walkiemodel = models.IntegerField(verbose_name='对讲机型号')
@@ -83,5 +85,8 @@ class StorageAssetsWalkie(models.Model):     #对讲机入库
 class WalkieModel(models.Model):
     walkiemodel = models.CharField(max_length=20,verbose_name='对讲机型号')
 
-class OutType(models.Model):
-    outtype = models.CharField(max_length=20,verbose_name='出库类型')
+#数字证书
+class cateinfo(models.Model):
+
+
+
