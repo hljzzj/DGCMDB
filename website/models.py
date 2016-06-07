@@ -86,7 +86,12 @@ class WalkieModel(models.Model):
     walkiemodel = models.CharField(max_length=20,verbose_name='对讲机型号')
 
 #数字证书
-class cateinfo(models.Model):
+class ApplyCateInfo(models.Model):      #证书申请
+    ApplyType = models.IntegerField(verbose_name='申请类型')
+    IDCard = models.IntegerField(verbose_name='身份证')
+    Workgroup = models.IntegerField(verbose_name='所属单位')
+    UserName = models.CharField(max_length='50',verbose_name='申请人姓名',null='Ture')
+    UserSex = models.
 
 
 
