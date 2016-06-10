@@ -7,26 +7,26 @@ class SiteInfo(models.Model):
 
 #日志
 class Logexer(models.Model):        #操作日志
-    time = models.DateTimeField(verbose_name='操作时间')
-    name = models.CharField(max_length=20,verbose_name='操作人')
-    ip = models.CharField(max_length=30,verbose_name='操作IP')
-    act = models.CharField(max_length=200,verbose_name='操作行为')
+    time = models.DateTimeField(auto_now=True,verbose_name='操作时间')
+    name = models.CharField(max_length=20,verbose_name='操作人',null=True)
+    ip = models.IPAddressField(verbose_name='操作IP')
+    act = models.CharField(max_length=256,verbose_name='操作行为')
 class Logbrowse(models.Model):      #访问记录
-    time = models.DateTimeField(verbose_name='访问时间')
-    ip = models.CharField(max_length=30,verbose_name='访问IP')
+    time = models.DateTimeField(auto_now=True,verbose_name='访问时间')
+    ip = models.IPAddressField(verbose_name='访问IP')
     act = models.CharField(max_length=200,verbose_name='访问行为')
 
 #用户信息配置
 class UserInfo(models.Model):
-    username = models.CharField(max_length=50,verbose_name='用户名称')
-    password = models.CharField(max_length=50,verbose_name='用户密码')
+    user = models.CharField(max_length=50,verbose_name='用户名称',unique=True)
+    pwd = models.CharField(max_length=50,verbose_name='用户密码')
     work = models.CharField(max_length=50,verbose_name='部门')
-    CreateDate = models.DateField(max_length=50,verbose_name='用户创建时间')
-    Logintime = models.DateTimeField(default='2016-12-12 12:12',verbose_name='用户登陆时间')
-    LoginIP = models.CharField(max_length=16,verbose_name='用户登陆IP')
-    Super = models.IntegerField(default='1',verbose_name='用户权限')
+    CreateDate = models.DateTimeField(auto_now_add=True,verbose_name='用户创建时间',error_messages={"invalid":'日期格式错误'})
+    Logintime = models.DateTimeField(auto_now=True,verbose_name='用户登陆时间')
+    LoginIP = models.IPAddressField(verbose_name='用户登陆IP',null=True)
+    typeId = models.ForeignKey('UserType')
 #用户权限表
-class UserSuper(models.Model):
+class UserType(models.Model):
     supername = models.CharField(max_length=50)
 #部门表
 class Work(models.Model):
@@ -103,5 +103,10 @@ class ApplyCateInfo(models.Model):      #证书申请
     UserIP = models.IPAddressField(verbose_name='用户申请时IP')
 
 
+#主机资产
+class Asset(models.Model):
+    hostname = models.CharField(max_length=256)
+    create_date = models.DateTimeField(auto_now_add=True)
+    update_date = models.DateTimeField(auto_now=True)
 
 

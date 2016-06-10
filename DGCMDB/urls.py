@@ -15,7 +15,7 @@ Including another URLconf
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from activator import process
-from website.views import index
+from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata
 
 
 urlpatterns = patterns('',
@@ -26,7 +26,12 @@ urlpatterns = patterns('',
     #('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
     #('^(?P<app>(\w+))/$', process, {'function': 'index'}),
     #('^$', process, {'function': 'index'}),
-    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
-
+    url(r'^AppalyCertificate/$',ApplyCertificate),
+    url(r'^login/$',Login),
+    url(r'^adduser/$',Adduser),
+    url(r'^adddata/(?P<name>\d*)/$',Adddata),
+    url(r'^deldata/(?P<id>\d*)/$',Deldata),
+    url(r'^update/(?P<id>\d*)/(?P<hostname>\w*)/$',Update),
+    url(r'^getdata/(?P<hostname>\w*)/$',Getdata),
 )
 

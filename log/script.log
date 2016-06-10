@@ -114,3 +114,355 @@ TemplateDoesNotExist: index.html
 2016-06-05 13:37:13,507 [Thread-66:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
 2016-06-05 13:40:59,090 [Thread-74:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
 2016-06-05 16:14:19,209 [Thread-82:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 03:08:48,857 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 29, in <module>
+    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
+TypeError: url() takes at least 2 arguments (1 given)
+2016-06-10 03:08:49,349 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 29, in <module>
+    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
+TypeError: url() takes at least 2 arguments (1 given)
+2016-06-10 03:08:49,574 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 29, in <module>
+    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
+TypeError: url() takes at least 2 arguments (1 given)
+2016-06-10 03:08:56,633 [Thread-5:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /index
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 29, in <module>
+    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
+TypeError: url() takes at least 2 arguments (1 given)
+2016-06-10 03:09:27,188 [Thread-11:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 03:12:26,683 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ApplyCertificate
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 29, in <module>
+    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
+TypeError: url() takes at least 2 arguments (1 given)
+2016-06-10 03:20:00,505 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate
+2016-06-10 03:20:17,132 [Thread-4:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate/
+2016-06-10 03:20:19,962 [Thread-5:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ApplyCertificate
+2016-06-10 03:20:33,469 [Thread-8:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 03:51:17,720 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 20
+    if result == 1
+                 ^
+SyntaxError: invalid syntax
+2016-06-10 03:57:55,621 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 21
+SyntaxError: Non-ASCII character '\xe7' in file /Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py on line 21, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2016-06-10 03:58:44,446 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 22
+SyntaxError: Non-ASCII character '\xe7' in file /Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py on line 22, but no encoding declared; see http://python.org/dev/peps/pep-0263/ for details
+2016-06-10 04:00:41,131 [Thread-7:123145310715904] [django.request:98] [csrf:_reject] [WARNING]- Forbidden (CSRF cookie not set.): /login/
+2016-06-10 04:01:07,452 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 20, in Login
+    result = UserInfo.objects.filter(username= user,password=pwd).count()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 679, in filter
+    return self._filter_or_exclude(False, *args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 697, in _filter_or_exclude
+    clone.query.add_q(Q(*args, **kwargs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 1310, in add_q
+    clause, require_inner = self._add_q(where_part, self.used_aliases)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 1338, in _add_q
+    allow_joins=allow_joins, split_subq=split_subq,
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 1150, in build_filter
+    lookups, parts, reffed_expression = self.solve_lookup_type(arg)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 1036, in solve_lookup_type
+    _, field, _, lookup_parts = self.names_to_path(lookup_splitted, self.get_meta())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 1397, in names_to_path
+    "Choices are: %s" % (name, ", ".join(available)))
+FieldError: Cannot resolve keyword 'username' into field. Choices are: CreateDate, LoginIP, Logintime, Super, id, pwd, user, work
+2016-06-10 04:03:06,881 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /login/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 20, in Login
+    result = UserInfo.objects.filter(user=user,pwd=pwd).count()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 318, in count
+    return self.query.get_count(using=self.db)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 466, in get_count
+    number = obj.get_aggregation(using, ['__count'])['__count']
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/query.py", line 447, in get_aggregation
+    result = compiler.execute_sql(SINGLE)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_userinfo.pwd' in 'where clause'")
+2016-06-10 06:16:51,625 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /adduser
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 108, in get_response
+    response = middleware_method(request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/middleware/common.py", line 74, in process_request
+    if (not urlresolvers.is_valid_path(request.path_info, urlconf) and
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 646, in is_valid_path
+    resolve(path, urlconf)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 521, in resolve
+    return get_resolver(urlconf).resolve(path)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login,Adduser
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 6, in <module>
+    from website.forms import AdduserForm
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/forms.py", line 5, in <module>
+    class AdduserForm(forms.form):
+AttributeError: 'module' object has no attribute 'form'
+2016-06-10 06:18:04,692 [Thread-5:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /adduser/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 151, in get_response
+    % (callback.__module__, view_name))
+ValueError: The view website.views.Adduser didn't return an HttpResponse object. It returned None instead.
+2016-06-10 06:44:28,857 [Thread-5:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 10:17:05,000 [Thread-15:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 10:17:40,571 [Thread-17:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 10:45:59,941 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /adduser/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 39, in Adduser
+    return render_to_response('adduser.html', {'form': '用户名存在'})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 98, in render_to_string
+    template = get_template(template_name, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 35, in get_template
+    return engine.get_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 30, in get_template
+    return Template(self.engine.get_template(template_name, dirs))
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/engine.py", line 167, in get_template
+    template, origin = self.find_template(template_name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/engine.py", line 141, in find_template
+    source, display_name = loader(name, dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loaders/base.py", line 13, in __call__
+    return self.load_template(template_name, template_dirs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loaders/base.py", line 23, in load_template
+    template = Template(source, origin, template_name, self.engine)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 191, in __init__
+    self.nodelist = engine.compile_string(template_string, origin)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/engine.py", line 261, in compile_string
+    return parser.parse()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 342, in parse
+    compiled_result = compile_func(self, token)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/defaulttags.py", line 1163, in load
+    (taglib, e))
+TemplateSyntaxError: 'form.py' is not a valid tag library: Template library form.py not found, tried django.templatetags.form.py,django.contrib.admin.templatetags.form.py,django.contrib.staticfiles.templatetags.form.py
+2016-06-10 13:15:35,414 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 21:13:55,156 [Thread-2:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /adddata
+2016-06-10 21:14:40,032 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /adddata/zzj
+2016-06-10 21:14:46,227 [Thread-5:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /adddata/123/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: list() takes at most 1 argument (2 given)
+2016-06-10 21:17:59,813 [Thread-6:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /adddata/asd
+2016-06-10 21:18:05,539 [Thread-8:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /adddata/123222/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+TypeError: list() takes at most 1 argument (2 given)
+2016-06-10 21:29:28,242 [Thread-8:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-10 21:52:29,692 [Thread-2:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /getdata
+2016-06-10 21:57:13,948 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /getdata/4/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 65
+    for item in assetList
+                        ^
+SyntaxError: invalid syntax
+2016-06-10 21:57:33,731 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /getdata/4/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 66, in Getdata
+    print assetList.id
+AttributeError: 'QuerySet' object has no attribute 'id'
+2016-06-10 21:57:36,642 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /getdata/4/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 66, in Getdata
+    print assetList.id
+AttributeError: 'QuerySet' object has no attribute 'id'
+2016-06-10 21:59:26,345 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /getdata/4/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 66, in Getdata
+    print assetList.id
+AttributeError: 'QuerySet' object has no attribute 'id'
+2016-06-10 22:02:28,336 [Thread-6:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /getdata/1/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 67, in Getdata
+    return HttpResponse(item.id)
+UnboundLocalError: local variable 'item' referenced before assignment
+2016-06-10 22:04:03,016 [Thread-4:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /getdata/s/
