@@ -8,3 +8,5 @@ def index(request,kwargs):
 
 def index(request):
     return render(request, 'index.html', locals())
+def ApplyCertificate(request):
+    return  render(request,'ApplyCertificate.html',locals())

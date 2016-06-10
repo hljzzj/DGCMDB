@@ -26,5 +26,7 @@ urlpatterns = patterns('',
     #('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
     #('^(?P<app>(\w+))/$', process, {'function': 'index'}),
     #('^$', process, {'function': 'index'}),
+    url(r'^AppalyCertificate/,AppleCertificate,name=ApplyCertifycate'),
+
 )
 

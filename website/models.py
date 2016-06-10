@@ -1,7 +1,7 @@
 #coding=utf-8
 from django.db import models
 # Create your models here.
-#站点配置
+# 站点配置
 class SiteInfo(models.Model):
     SiteName = models.CharField(max_length=200)
 
@@ -31,8 +31,6 @@ class UserSuper(models.Model):
 #部门表
 class Work(models.Model):
     work = models.CharField(max_length=50)
-
-
 
 class IPInfo(models.Model):
 
@@ -91,7 +89,19 @@ class ApplyCateInfo(models.Model):      #证书申请
     IDCard = models.IntegerField(verbose_name='身份证')
     Workgroup = models.IntegerField(verbose_name='所属单位')
     UserName = models.CharField(max_length='50',verbose_name='申请人姓名',null='Ture')
-    UserSex = models.
+    UserSex = models.IntegerField(verbose_name='性别')
+    UserPhone = models.IntegerField(verbose_name='电话')
+    UserIDCard = models.IntegerField(verbose_name='身份证')
+    UserEmail = models.EmailField(verbose_name='电子邮件')
+    UserAddress = models.CharField(max_length='50',verbose_name='地址')
+    Userzhiwu = models.IntegerField(verbose_name='任职')
+    UserLeve = models.IntegerField(verbose_name='职级')
+    UserWork = models.IntegerField(verbose_name='工作岗位')
+    UserWrokType = models.IntegerField(verbose_name='警种')
+    UserApplyTime = models.DateTimeField(verbose_name='申请时间')
+    UserCateID = models.CharField(max_length='50',verbose_name='证书编号')
+    UserIP = models.IPAddressField(verbose_name='用户申请时IP')
+
 
 
 

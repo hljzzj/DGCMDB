@@ -334,3 +334,5 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
 2016-06-05 13:31:27,143 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.114) SET SQL_AUTO_IS_NULL = 0; args=None
 2016-06-05 13:31:27,263 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.119) SHOW FULL TABLES; args=None
 2016-06-05 13:31:27,391 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.117) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-06-09 14:18:31,971 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.059) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-09 14:19:27,900 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.049) SET SQL_AUTO_IS_NULL = 0; args=None
