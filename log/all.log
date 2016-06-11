@@ -961,3 +961,14 @@ VariableDoesNotExist: Failed lookup for key [name] in u'<RegexURLResolver <Regex
 2016-06-11 12:27:58,282 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.058) SET SQL_AUTO_IS_NULL = 0; args=None
 2016-06-11 12:27:58,346 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.064) SHOW FULL TABLES; args=None
 2016-06-11 12:27:58,406 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.057) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-06-11 16:22:09,940 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.048) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:23:56,071 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.044) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:25:46,650 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.041) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:27:04,579 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.044) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:27:04,978 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.036) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:27:05,032 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.053) SHOW FULL TABLES; args=None
+2016-06-11 16:27:05,102 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.039) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
+2016-06-11 16:45:17,976 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.040) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:45:18,478 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.045) SET SQL_AUTO_IS_NULL = 0; args=None
+2016-06-11 16:45:18,529 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.050) SHOW FULL TABLES; args=None
+2016-06-11 16:45:18,598 [Dummy-1:123145306509312] [django.db.backends:89] [utils:execute] [DEBUG]- (0.046) SELECT `django_migrations`.`app`, `django_migrations`.`name` FROM `django_migrations`; args=()
