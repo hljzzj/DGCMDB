@@ -15,7 +15,7 @@ Including another URLconf
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from activator import process
-from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata
+from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList
 
 
 urlpatterns = patterns('',
@@ -33,5 +33,6 @@ urlpatterns = patterns('',
     url(r'^deldata/(?P<id>\d*)/$',Deldata),
     url(r'^update/(?P<id>\d*)/(?P<hostname>\w*)/$',Update),
     url(r'^getdata/(?P<hostname>\w*)/$',Getdata),
+    url(r'^assetlist/$',AssetList),
 )
 

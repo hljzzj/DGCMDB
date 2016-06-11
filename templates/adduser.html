@@ -1,4 +1,3 @@
-{% load form.py %}
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
         "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -6,12 +5,12 @@
     <title>Title</title>
 </head>
 <body>
-    <form action="/templates/adduser.html" method="post">
-        用户名:{{  }}
+    <form action='/adduser/' method="post">
+        <span>用户名:</span>{{ form.username }}
         <br/>
-        密码:{{ form.password }}
+        <span>邮箱:</span>{{ form.email }}
         <br/>
-        <input type="submit" value="添加"><span>{{ form }}</span>
+        <input type="submit" value="添加"><span>{{ status }}</span>
     </form>
 </body>
 </html>

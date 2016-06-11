@@ -3,9 +3,10 @@ from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import render_to_response
 
-from website.models import UserInfo
-from website.templates.forms import AdduserForm
+from website.forms import AdduserForm
 from website.models import Asset
+from website.models import UserInfo
+
 
 # Create your views here.
 
@@ -31,15 +32,20 @@ def Login(request):
     return HttpResponse('login')
 def Adduser(request):
     adduserform = AdduserForm()
-
     if request.method == 'POST':
         form = AdduserForm(request.POST)
         if form.is_valid():
-            data = form.cleaned_data
+            username = request.POST.get('username',None)
+            email = request.POST.get('email',None)
+            result = UserInfo.objects.filter(user=username).count()
+            if result == 0:
+                UserInfo.objects.create(user=username,pwd=email)
+            else:
+                return render_to_response('adduser.html', {'form': adduserform,'status':'用户名存在'})
         else:
-            form.errors
-    else:
-        return render_to_response('adduser.html', {'form': '用户名存在'})
+            temp = form.errors.as_data()
+            print temp['email'][0].messages[0]
+    return render_to_response('adduser.html', {'form': adduserform})
 
 #数据库操作
 #增
@@ -65,3 +71,7 @@ def Getdata(request,hostname):
     for item in assetList:
         print item.hostname
     return HttpResponse(item.hostname)
+
+def AssetList(request):
+    asset_list = Asset.objects.all()
+    return render_to_response('assetlist.html',{'data':asset_list})

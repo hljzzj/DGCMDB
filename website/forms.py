@@ -4,4 +4,4 @@ from django import forms
 
 class AdduserForm(forms.Form):
     username = forms.CharField()
-    password = forms.PasswordInput()
+    email = forms.EmailField(required=True,error_messages={'invalid':'邮箱格式错误'})
