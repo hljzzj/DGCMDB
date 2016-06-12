@@ -3,9 +3,9 @@ from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import render_to_response
 
-from website.forms import AdduserForm
+from website.forms import AdduserForm,ApplyCertificateForm
 from website.models import Asset
-from website.models import UserInfo
+from website.models import UserInfo,ApplyCateInfo
 
 
 # Create your views here.
@@ -17,7 +17,20 @@ def index(request,kwargs):
 def index(request):
     return render(request, 'index.html', locals())
 def ApplyCertificate(request):
-    return  render(request,'ApplyCertificate.html',locals())
+    applycertificateForm = ApplyCertificateForm()
+    if request.method == 'POST':
+        form = ApplyCertificateForm(request.POST)
+        if form.is_valid():
+            applytype = request.POST.get('ApplyType',)
+            username = request.POST.get('UserName')
+            result = ApplyCateInfo.objects.filter(UserName=username).count()
+            if result == 0:
+                ApplyCateInfo.objects.create(username=username)
+        else:
+            return render_to_response('ApplyCertificate.html',{'form':applycertificateForm})
+    else:
+        return render_to_response('ApplyCertificate.html',{'form':applycertificateForm})
+
 def Login(request):
     if request.method == 'POST':
         user = request.POST.get('username',None)

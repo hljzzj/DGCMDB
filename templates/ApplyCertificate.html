@@ -6,15 +6,11 @@
     <div>
         <div>
             <div class="page-form">
-                <form action="" method="post" class="smart-green">
+                <form action="/applycertificate/" method="post" class="smart-green">
                     <h1>数字证书在线申请</h1>
-                    <label>
-                        <span>申请类型</span><br>
-                        <div>首次申请 : <input id="" type="radio" name="apply" value="" class="radioclass" /></div>
-                        <div>到期延期 : <input id="" type="radio" name="apply" value="" class="radioclass" /></div>
-                        <div>损坏丢失补办 : <input id="" type="radio" name="apply" value="" class="radioclass" /></div>
-                        <div>离职退休注销 : <input id="" type="radio" name="apply" value="" class="radioclass" /></div></span>
-                    </label>
+                    <div>
+                        <span>申请类型</span>{{ form.ApplyType }}
+                    </div>
                     <hr>
                     <label>
                         <div>所属单位 :<input id="name" type="text" name="name" /></div>

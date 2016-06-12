@@ -16,7 +16,7 @@ from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from activator import process
 from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList
-
+admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
@@ -26,7 +26,7 @@ urlpatterns = patterns('',
     #('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
     #('^(?P<app>(\w+))/$', process, {'function': 'index'}),
     #('^$', process, {'function': 'index'}),
-    url(r'^AppalyCertificate/$',ApplyCertificate),
+    url(r'^applycertificate/$',ApplyCertificate),
     url(r'^login/$',Login),
     url(r'^adduser/$',Adduser),
     url(r'^adddata/(?P<name>\d*)/$',Adddata),

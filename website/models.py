@@ -9,21 +9,21 @@ class SiteInfo(models.Model):
 class Logexer(models.Model):        #操作日志
     time = models.DateTimeField(auto_now=True,verbose_name='操作时间')
     name = models.CharField(max_length=20,verbose_name='操作人',null=True)
-    ip = models.GenericIPAddressField(verbose_name='操作IP')
+    ip = models.GenericIPAddressField(protocol='ipv4',verbose_name='操作IP')
     act = models.CharField(max_length=256,verbose_name='操作行为')
 class Logbrowse(models.Model):      #访问记录
     time = models.DateTimeField(auto_now=True,verbose_name='访问时间')
-    ip = models.GenericIPAddressField(verbose_name='访问IP')
+    ip = models.GenericIPAddressField(protocol='ipv4',verbose_name='访问IP')
     act = models.CharField(max_length=200,verbose_name='访问行为')
 
 #用户信息配置
-class UserInfo(models.Model):
-    user = models.CharField(max_length=50,verbose_name='用户名称',unique=True)
-    pwd = models.CharField(max_length=50,verbose_name='用户密码')
+class UserInfo(models.Model,):
+    user = models.CharField(max_length=50,verbose_name='用户名',unique=True)
+    pwd = models.CharField(max_length=50,verbose_name='密码')
     work = models.CharField(max_length=50,verbose_name='部门')
     CreateDate = models.DateTimeField(auto_now_add=True,verbose_name='用户创建时间',error_messages={"invalid":'日期格式错误'})
     Logintime = models.DateTimeField(auto_now=True,verbose_name='用户登陆时间')
-    LoginIP = models.GenericIPAddressField(verbose_name='用户登陆IP',null=True)
+    LoginIP = models.GenericIPAddressField(protocol='ipv4',verbose_name='用户登陆IP',null=True)
     typeId = models.ForeignKey('UserType')
 #用户权限表
 class UserType(models.Model):
@@ -98,7 +98,6 @@ class WalkieModel(models.Model):
 #数字证书
 class ApplyCateInfo(models.Model):      #证书申请
     ApplyType = models.ForeignKey('ApplyType',verbose_name='申请类型')
-    IDCard = models.IntegerField(verbose_name='身份证')
     Workgroup = models.ForeignKey('WorkGroup',verbose_name='所属单位')
     UserName = models.CharField(max_length=50,verbose_name='申请人姓名',null='Ture')
     UserSex = models.ForeignKey('UserSex',verbose_name='性别')
@@ -112,7 +111,7 @@ class ApplyCateInfo(models.Model):      #证书申请
     UserWrokType = models.ForeignKey('UserWorkType',verbose_name='警种')
     UserApplyTime = models.DateTimeField(auto_now_add=True,verbose_name='申请时间')
     UserCateID = models.CharField(max_length=50,verbose_name='证书编号',null=True)
-    UserIP = models.GenericIPAddressField(verbose_name='用户申请时IP')
+    UserIP = models.GenericIPAddressField(protocol='ipv4',verbose_name='用户申请时IP')
 
 
 

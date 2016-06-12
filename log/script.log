@@ -579,3 +579,26 @@ Traceback (most recent call last):
   File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 46, in get_template
     raise TemplateDoesNotExist(template_name)
 TemplateDoesNotExist: {'status': '\xe7\x94\xa8\xe6\x88\xb7\xe5\x90\x8d\xe5\xb7\xb2\xe5\xad\x98\xe5\x9c\xa8'}
+2016-06-12 01:05:15,387 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 01:05:29,187 [Thread-4:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /ApplyCertificate
+2016-06-12 01:14:11,673 [Thread-2:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /ApplyCertificate
+2016-06-12 01:14:48,855 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /ApplyCertificate
+2016-06-12 01:17:25,117 [Thread-2:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /applycertificate
+2016-06-12 01:17:30,266 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /applycertificate
+2016-06-12 01:17:50,538 [Thread-2:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /applycertificate
+2016-06-12 01:17:50,821 [Thread-4:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 03:26:00,409 [Thread-3:123145314922496] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 03:28:12,793 [Thread-9:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 04:01:42,470 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 04:25:07,182 [Thread-7:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 04:27:37,991 [Thread-7:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 04:28:56,534 [Thread-9:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 04:30:18,166 [Thread-9:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:08:01,859 [Thread-7:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:19:39,191 [Thread-7:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:21:01,674 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:21:51,428 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:22:54,357 [Thread-3:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:23:49,601 [Thread-6:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 08:43:19,890 [Thread-2:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /admin
+2016-06-12 08:51:32,246 [Thread-26:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
