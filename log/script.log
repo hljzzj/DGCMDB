@@ -602,3 +602,895 @@ TemplateDoesNotExist: {'status': '\xe7\x94\xa8\xe6\x88\xb7\xe5\x90\x8d\xe5\xb7\x
 2016-06-12 08:23:49,601 [Thread-6:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
 2016-06-12 08:43:19,890 [Thread-2:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /admin
 2016-06-12 08:51:32,246 [Thread-26:123145310715904] [django.request:182] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:05:30,001 [Thread-7:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:05:30,086 [Thread-10:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-12 15:05:30,151 [Thread-11:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-06-12 15:05:38,393 [Thread-14:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:07:53,188 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /applycertificate/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 6, in <module>
+    from website.forms import AdduserForm,ApplyCertificateForm
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/forms.py", line 9, in <module>
+    class ApplyCertificateForm(forms.Form):
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/forms.py", line 11, in ApplyCertificateForm
+    Workgroup = forms.Select(choices=(('1',"123")),label='所属部门')
+TypeError: __init__() got an unexpected keyword argument 'label'
+2016-06-12 15:08:48,511 [Thread-4:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:09:56,131 [Thread-9:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:39:04,797 [Thread-14:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:39:13,088 [Thread-16:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:40:55,929 [Thread-18:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:42:17,735 [Thread-20:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:43:37,577 [Thread-22:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:43:40,018 [Thread-24:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:47:51,861 [Thread-26:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:52:11,736 [Thread-28:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:53:31,629 [Thread-39:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-06-12 15:54:16,507 [Thread-41:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 05:51:01,406 [Thread-12:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 05:51:01,487 [Thread-13:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /favicon.ico
+2016-07-30 05:51:51,211 [Thread-14:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /index
+2016-07-30 05:52:17,836 [Thread-17:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /accesslist
+2016-07-30 05:52:36,853 [Thread-20:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /s
+2016-07-30 05:52:46,668 [Thread-21:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /adddata
+2016-07-30 05:53:08,066 [Thread-22:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /update
+2016-07-30 05:53:16,139 [Thread-23:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /getdata
+2016-07-30 05:54:41,063 [Thread-26:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 05:55:58,479 [Thread-28:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 05:55:59,719 [Thread-30:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 05:56:02,678 [Thread-32:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:10:31,405 [Thread-34:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:17:18,046 [Thread-36:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:17:20,214 [Thread-38:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:17:21,595 [Thread-40:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:17:22,417 [Thread-42:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:17:23,138 [Thread-44:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:17:24,575 [Thread-46:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:18:06,633 [Thread-48:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:18:52,831 [Thread-50:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:27:33,453 [Thread-52:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:27:34,611 [Thread-54:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:27:35,384 [Thread-56:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:27:36,174 [Thread-58:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:28:44,336 [Thread-60:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:38:39,228 [Thread-69:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:39:11,691 [Thread-82:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:39:12,596 [Thread-93:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:01,766 [Thread-95:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:21,442 [Thread-106:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:22,296 [Thread-117:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:22,805 [Thread-128:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:23,043 [Thread-139:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:23,246 [Thread-150:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:23,433 [Thread-161:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:23,611 [Thread-172:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:23,796 [Thread-183:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:41:23,973 [Thread-194:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:47:22,170 [Thread-205:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:48:12,538 [Thread-216:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 06:48:35,238 [Thread-227:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:26:19,410 [Thread-2:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /AppalyCertificate/
+2016-07-30 10:32:15,710 [Thread-5:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:39:02,635 [Thread-16:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:39:05,480 [Thread-12:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:39:10,245 [Thread-23:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:40:04,865 [Thread-12:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:40:06,964 [Thread-23:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 10:40:14,165 [Thread-24:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ServerHost
+2016-07-30 10:42:29,307 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:42:31,064 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:48:27,479 [Thread-5:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:48:29,746 [Thread-6:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:48:33,026 [Thread-7:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:48:33,919 [Thread-8:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:50:51,991 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    serlist = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:51:29,907 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:51:32,274 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:51:36,008 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:53:30,786 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:57:29,988 [Thread-5:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:57:31,632 [Thread-6:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:57:33,218 [Thread-7:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:57:34,337 [Thread-8:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 10:57:35,963 [Thread-9:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHost
+    server_list = ServerHost.objects.all()
+AttributeError: 'function' object has no attribute 'objects'
+2016-07-30 11:14:04,775 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHost/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 119, in get_response
+    resolver_match = resolver.resolve(request.path_info)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 365, in resolve
+    for pattern in self.url_patterns:
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 401, in url_patterns
+    patterns = getattr(self.urlconf_module, "urlpatterns", self.urlconf_module)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/urlresolvers.py", line 395, in urlconf_module
+    self._urlconf_module = import_module(self.urlconf_name)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/importlib/__init__.py", line 37, in import_module
+    __import__(name)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/DGCMDB/urls.py", line 18, in <module>
+    from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList,ServerHost
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93
+    server_list = ServerHost.objects.
+                                    ^
+SyntaxError: invalid syntax
+2016-07-30 11:15:57,731 [Thread-3:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ServerHost/
+2016-07-30 11:16:32,162 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 93, in ServerHostList
+    server_list = ServerHost.objects.all()
+NameError: global name 'ServerHost' is not defined
+2016-07-30 11:49:58,198 [Thread-2:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 11:50:21,913 [Thread-3:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 11:52:31,114 [Thread-4:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 11:52:39,305 [Thread-5:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 11:52:45,364 [Thread-6:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 18:18:12,838 [Thread-8:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:18:15,812 [Thread-10:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:18:22,526 [Thread-11:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /ServerHost/
+2016-07-30 18:18:30,538 [Thread-12:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 18:19:05,501 [Thread-13:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 144, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 18:19:09,118 [Thread-14:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 144, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 18:19:13,913 [Thread-15:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/defaulttags.py", line 162, in render
+    len_values = len(values)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 144, in __len__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 18:20:18,181 [Thread-16:123145314922496] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /ServerHostList/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 94, in ServerHostList
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/shortcuts.py", line 39, in render_to_response
+    content = loader.render_to_string(template_name, context, using=using)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader.py", line 99, in render_to_string
+    return template.render(context, request)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/backends/django.py", line 74, in render
+    return self.template.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 210, in render
+    return self._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 135, in render
+    return compiled_parent._render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 202, in _render
+    return self.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/loader_tags.py", line 65, in render
+    result = block.nodelist.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/base.py", line 905, in render
+    bit = self.render_node(node, context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 79, in render_node
+    return node.render(context)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/template/debug.py", line 92, in render
+    output = force_text(output)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/utils/encoding.py", line 94, in force_text
+    s = six.text_type(bytes(s), encoding, errors)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 138, in __repr__
+    data = list(self[:REPR_OUTPUT_SIZE + 1])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 162, in __iter__
+    self._fetch_all()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 965, in _fetch_all
+    self._result_cache = list(self.iterator())
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 238, in iterator
+    results = compiler.execute_sql()
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 840, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/utils.py", line 98, in __exit__
+    six.reraise(dj_exc_type, dj_exc_value, traceback)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+OperationalError: (1054, "Unknown column 'website_serverhost.addtime' in 'field list'")
+2016-07-30 18:43:53,369 [Thread-10:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:45:52,702 [Thread-23:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:47:28,827 [Thread-34:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:48:54,833 [Thread-36:123145310715904] [django.request:256] [base:handle_uncaught_exception] [ERROR]- Internal Server Error: /adduser/
+Traceback (most recent call last):
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/core/handlers/base.py", line 132, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/Users/ZZJMAC/PycharmProjects/DGCMDB/website/views.py", line 55, in Adduser
+    UserInfo.objects.create(user=username,pwd=email)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 348, in create
+    obj.save(force_insert=True, using=self.db)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/base.py", line 734, in save
+    force_update=force_update, update_fields=update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/base.py", line 762, in save_base
+    updated = self._save_table(raw, cls, force_insert, force_update, using, update_fields)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/base.py", line 846, in _save_table
+    result = self._do_insert(cls._base_manager, using, fields, update_pk, raw)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/base.py", line 885, in _do_insert
+    using=using, raw=raw)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/manager.py", line 127, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/query.py", line 920, in _insert
+    return query.get_compiler(using=using).execute_sql(return_id)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/models/sql/compiler.py", line 974, in execute_sql
+    cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 79, in execute
+    return super(CursorDebugWrapper, self).execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/utils.py", line 64, in execute
+    return self.cursor.execute(sql, params)
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 129, in execute
+    six.reraise(utils.IntegrityError, utils.IntegrityError(*tuple(e.args)), sys.exc_info()[2])
+  File "/Library/Python/2.7/site-packages/Django-1.8.9-py2.7.egg/django/db/backends/mysql/base.py", line 124, in execute
+    return self.cursor.execute(query, args)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/cursors.py", line 202, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQL_python-1.2.4b4-py2.7-macosx-10.11-intel.egg/MySQLdb/connections.py", line 36, in defaulterrorhandler
+    raise errorclass, errorvalue
+IntegrityError: (1048, "Column 'typeId_id' cannot be null")
+2016-07-30 18:55:05,261 [Thread-52:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:55:07,154 [Thread-63:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:55:08,364 [Thread-74:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:55:09,860 [Thread-85:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:55:34,862 [Thread-96:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php
+2016-07-30 18:55:42,683 [Thread-107:123145310715904] [django.request:170] [base:get_response] [WARNING]- Not Found: /inc/timming.php

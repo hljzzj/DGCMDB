@@ -8,7 +8,7 @@ class AdduserForm(forms.Form):
 
 class ApplyCertificateForm(forms.Form):
     ApplyType = forms.ChoiceField(choices=(('1',"首次申请"),('2',"到期延期"),('3',"损坏丢失补办"),('4',"离职退休注销")),widget=forms.RadioSelect,label='申请类型')
-    Workgroup = forms.ChoiceField(label='所属部门')
+    Workgroup = forms.ChoiceField(choices=(('1',"123"),('2',"456")),widget=forms.Select,label='所属部门')
     UserName = forms.CharField(label='姓名')
     UserSex = forms.CharField(label='性别')
     UserPhone = forms.CharField(max_length=11,label='电话')

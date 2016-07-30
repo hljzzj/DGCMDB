@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response
 
 from website.forms import AdduserForm,ApplyCertificateForm
 from website.models import Asset
-from website.models import UserInfo,ApplyCateInfo
+from website.models import UserInfo,ApplyCateInfo,ServerHost
 
 
 # Create your views here.
@@ -88,3 +88,7 @@ def Getdata(request,hostname):
 def AssetList(request):
     asset_list = Asset.objects.all()
     return render_to_response('assetlist.html',{'data':asset_list})
+
+def ServerHostList(request):
+    serverhost_list = ServerHost.objects.all()
+    return render_to_response('ServerHostList.html',{'data':serverhost_list})

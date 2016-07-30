@@ -17,7 +17,7 @@ class Logbrowse(models.Model):      #访问记录
     act = models.CharField(max_length=200,verbose_name='访问行为')
 
 #用户信息配置
-class UserInfo(models.Model,):
+class UserInfo(models.Model):
     user = models.CharField(max_length=50,verbose_name='用户名',unique=True)
     pwd = models.CharField(max_length=50,verbose_name='密码')
     work = models.CharField(max_length=50,verbose_name='部门')
@@ -122,3 +122,21 @@ class Asset(models.Model):
     update_date = models.DateTimeField(auto_now=True)
 
 
+
+#运维键值
+class DeviceStatus(models.Model):
+    status = models.CharField(max_length=50,verbose_name='主机状态分类')
+#运维
+class ServerHost(models.Model):     #主机
+    hostName = models.CharField(max_length=50,verbose_name='主机名称',null=True)
+    hostIP = models.GenericIPAddressField(protocol='ipv4',verbose_name='主机IP')
+    status = models.ForeignKey('DeviceStatus',verbose_name='主机状态')
+    updatetime = models.DateTimeField(auto_now=True,verbose_name='主机更新时间')
+    addtime = models.DateTimeField(auto_created=True,verbose_name='主机添加时间')
+
+
+class NetworkDevice(models.Model):  #网络设备
+    deviceID = models.IntegerField(verbose_name='网络设备ID')
+    deviceIP = models.GenericIPAddressField(protocol='ipv4', verbose_name='网络设备IP')
+    status = models.ForeignKey('DeviceStatus', verbose_name='网络设备状态')
+    time = models.DateTimeField(auto_now=True, verbose_name='网络设备更新时间')

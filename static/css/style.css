@@ -182,9 +182,10 @@ input {
 /* 二级菜单 结束 */
 
 
-#bodycss {
+#headbody {
     top:0;
 	width:auto;
+    background: #260930;
 
 	
 }

@@ -8,13 +8,17 @@
             <div class="page-form">
                 <form action="/applycertificate/" method="post" class="smart-green">
                     <h1>数字证书在线申请</h1>
-                    <div>
+                    <div class="radioclass">
                         <span>申请类型</span>{{ form.ApplyType }}
                     </div>
                     <hr>
                     <label>
-                        <div>所属单位 :<input id="name" type="text" name="name" /></div>
-
+                        <div>{{ form.Workgroup }}</div>
+                        <div id="addAddress" >
+                            <div class="address_input">
+                                <input class="address_input1" type="" placeholder="请选择" id="shengshi" onClick="getProvinceBuy()" readonly="readonly">
+                            </div>
+                        </div>
                         <div >姓名 :<input style="width: 80px;" id="name" type="text" name="name" placeholder="" /></div>
                         <div ><span>性别 :</span>
                         <select class="select">
