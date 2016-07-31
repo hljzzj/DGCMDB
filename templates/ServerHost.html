@@ -4,11 +4,11 @@
 <head>
 <meta http-equiv="refresh"content="10">
 </head>
-<body style="background: #260930;overflow: hidden;">
+<body >
 <div >
     <h1>服务器列表</h1>
-    <table style="color: #009F5D;font-size: 15px;margin:auto"  border="1">
-        <tr style="color: #FFFFFF;">
+    <table style="color: #009F5D" border="1">
+        <tr>
             <td>ID</td>
             <td>服务器名</td>
             <td>服务器IP</td>
@@ -17,7 +17,7 @@
             <td>首次创建时间</td>
         </tr>
         {% for item in data %}
-            <tr style="color: #FFFFFF;">
+            <tr>
             <td>{{ item.id }}</td>
             <td>{{ item.hostName }}</td>
             <td>{{ item.hostIP}}</td>
@@ -28,9 +28,6 @@
         {% endfor %}
 
     </table>
-</div>
-<div>
-
 </div>
 </body>
 {% endblock %}
