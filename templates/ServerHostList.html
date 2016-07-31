@@ -1,16 +1,27 @@
 {% extends "Master/muban.html" %}
 
 {% block content %}
+<head>
+<meta http-equiv="refresh"content="10">
+</head>
 <body id="headbody">
-<div>
-    <h1>{{ data }}</h1>
-    <table border="1">
+<div >
+    <h1>服务器列表</h1>
+    <table style="color: #009F5D" border="1">
+        <tr>
+            <td>ID</td>
+            <td>服务器名</td>
+            <td>服务器IP</td>
+            <td>服务器状态</td>
+            <td>最后存活时间</td>
+            <td>首次创建时间</td>
+        </tr>
         {% for item in data %}
             <tr>
             <td>{{ item.id }}</td>
             <td>{{ item.hostName }}</td>
             <td>{{ item.hostIP}}</td>
-            <td>{{ item.status}}</td>
+            <td>{{ item.status.status}}</td>
             <td>{{ item.updatetime|date:"Y-m-d H:i:s" }}</td>
             <td>{{ item.addtime|date:"Y-m-d H:i:s" }}</td>
             </tr>

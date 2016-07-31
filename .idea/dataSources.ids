@@ -878,88 +878,84 @@ model</columns>
         <data-type>datetime</data-type>
       </column>
       <index id="239" parent="31" name="website_serverhost_dc91ed4b">
-        <columns>status_id</columns>
+        <columns>id</columns>
         <desc-columns></desc-columns>
       </index>
-      <key id="240" parent="31" name="PRIMARY">
-        <columns>id</columns>
-        <primary>1</primary>
-      </key>
-      <column id="241" parent="32" name="id">
+      <column id="240" parent="32" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="242" parent="32" name="name">
+      <column id="241" parent="32" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="243" parent="32" name="PRIMARY">
+      <key id="242" parent="32" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="244" parent="33" name="id">
+      <column id="243" parent="33" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="245" parent="33" name="name">
+      <column id="244" parent="33" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(4)</data-type>
       </column>
-      <key id="246" parent="33" name="PRIMARY">
+      <key id="245" parent="33" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="247" parent="34" name="id">
+      <column id="246" parent="34" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="248" parent="34" name="name">
+      <column id="247" parent="34" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="249" parent="34" name="PRIMARY">
+      <key id="248" parent="34" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="250" parent="35" name="id">
+      <column id="249" parent="35" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="251" parent="35" name="name">
+      <column id="250" parent="35" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="252" parent="35" name="PRIMARY">
+      <key id="251" parent="35" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="253" parent="36" name="id">
+      <column id="252" parent="36" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="254" parent="36" name="name">
+      <column id="253" parent="36" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="255" parent="36" name="PRIMARY">
+      <key id="254" parent="36" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>
-      <column id="256" parent="37" name="id">
+      <column id="255" parent="37" name="id">
         <mandatory>1</mandatory>
         <data-type>int(11)</data-type>
         <sequence-identity>1</sequence-identity>
       </column>
-      <column id="257" parent="37" name="name">
+      <column id="256" parent="37" name="name">
         <mandatory>1</mandatory>
         <data-type>varchar(50)</data-type>
       </column>
-      <key id="258" parent="37" name="PRIMARY">
+      <key id="257" parent="37" name="PRIMARY">
         <columns>id</columns>
         <primary>1</primary>
       </key>

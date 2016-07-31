@@ -3,7 +3,7 @@ from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import render_to_response
 
-from website.forms import AdduserForm,ApplyCertificateForm
+from website.forms import AdduserForm,ApplyCertificateForm,AddServerHostForm
 from website.models import Asset
 from website.models import UserInfo,ApplyCateInfo,ServerHost
 
@@ -89,6 +89,28 @@ def AssetList(request):
     asset_list = Asset.objects.all()
     return render_to_response('assetlist.html',{'data':asset_list})
 
+#运维功能
 def ServerHostList(request):
     serverhost_list = ServerHost.objects.all()
     return render_to_response('ServerHostList.html',{'data':serverhost_list})
+
+def AddServerHost(request):
+    addserverhostForm = AddServerHostForm()
+    if request.method == 'POST':
+        form = AddServerHostForm(request.POST)
+        if form.is_valid():
+            name = request.POST.get('name',None)
+            ip = request.POST.get('ip',None)
+
+            result1 = ServerHost.objects.filter(hostName=name).count()
+            result2 = ServerHost.objects.filter(hostIP=ip).count()
+            if result1 == 0 and result2 == 0:
+                ServerHost.objects.create(hostName=name,hostIP=ip)
+            elif result1 != 0:
+                return render_to_response('AddServerHost.html', {'form': addserverhostForm,'status':'主机名存在'})
+            else:
+                return render_to_response('AddServerHost.html', {'form': addserverhostForm, 'status': 'IP已存在'})
+        else:
+            temp = form.errors.as_data()
+            print temp['ip'][0].messages[0]
+    return render_to_response('AddServerHost.html', {'form': addserverhostForm})

@@ -20,3 +20,8 @@ class ApplyCertificateForm(forms.Form):
     UserWork = forms.CharField(label='工作岗位')
     UserWrokType = forms.CharField(label='警种')
     UserIP = forms.GenericIPAddressField(protocol='ipv4')
+
+class AddServerHostForm(forms.Form):
+    name = forms.CharField(max_length=50)
+    ip = forms.GenericIPAddressField(error_messages={'invalid': 'IP地址格式错误'})
+
