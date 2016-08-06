@@ -135,10 +135,10 @@ class ServerHost(models.Model):     #服务器
     addtime = models.DateTimeField(auto_now_add=True,verbose_name='主机添加时间')
 
 class ServerHostRecord(models.Model):     #服务器记录
-    hostName = models.ForeignKey(ServerHost,related_name='hostName_hostName',verbose_name='服务器名字',null=True)
+    #hostName = models.ForeignKey(ServerHost,related_name='hostName_hostName',verbose_name='服务器名字',null=True)
     hostIP = models.ForeignKey(ServerHost,related_name='hostIP_hostIP',verbose_name='服务器IP',null=True)
     status = models.ForeignKey(DeviceStatus,related_name='status1_status1',verbose_name='服务器状态')
-    updateTime = models.DateTimeField(verbose_name='时间',auto_now_add=True,null=True)
+    updateTime = models.DateTimeField(auto_now_add=True,verbose_name='时间')
 
 
 class NetworkDevice(models.Model):  #网络设备
