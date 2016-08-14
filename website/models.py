@@ -126,16 +126,19 @@ class Asset(models.Model):
 #运维键值
 class DeviceStatus(models.Model):
     status = models.CharField(max_length=50,verbose_name='主机状态分类')
+class DeviceGroup(models.Model):
+    group = models.CharField(max_length=50,verbose_name='设备分组',null=True)
 #运维
 class ServerHost(models.Model):     #服务器
     hostName = models.CharField(max_length=50,verbose_name='主机名称',null=True)
     hostIP = models.GenericIPAddressField(protocol='ipv4',verbose_name='主机IP')
-    status = models.ForeignKey(DeviceStatus,related_name='status_status',verbose_name='主机状态')
-    updatetime = models.DateTimeField(auto_now=True,verbose_name='主机更新时间')
+    status = models.ForeignKey(DeviceStatus,related_name='status_status',verbose_name='主机状态',null=True)
+    updatetime = models.DateTimeField(auto_now=True,verbose_name='主机更新时间',null=True)
     addtime = models.DateTimeField(auto_now_add=True,verbose_name='主机添加时间')
+    group = models.ForeignKey(DeviceGroup,related_name='group_group',verbose_name='服务器分组',null=True)
 
 class ServerHostRecord(models.Model):     #服务器记录
-    #hostName = models.ForeignKey(ServerHost,related_name='hostName_hostName',verbose_name='服务器名字',null=True)
+    #hostName_id = models.ForeignKey(ServerHost,related_name='hostName_hostName',verbose_name='服务器名字',null=True)
     hostIP = models.ForeignKey(ServerHost,related_name='hostIP_hostIP',verbose_name='服务器IP',null=True)
     status = models.ForeignKey(DeviceStatus,related_name='status1_status1',verbose_name='服务器状态')
     updateTime = models.DateTimeField(auto_now_add=True,verbose_name='时间')
@@ -146,3 +149,4 @@ class NetworkDevice(models.Model):  #网络设备
     deviceIP = models.GenericIPAddressField(protocol='ipv4', verbose_name='网络设备IP')
     status = models.ForeignKey(DeviceStatus, verbose_name='网络设备状态')
     time = models.DateTimeField(auto_now=True, verbose_name='网络设备更新时间')
+    group = models.ForeignKey(DeviceGroup,verbose_name='网络设备分组')

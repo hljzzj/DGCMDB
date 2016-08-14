@@ -64,6 +64,13 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
+            name='DeviceGroup',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('group', models.CharField(max_length=50, null=True, verbose_name=b'\xe8\xae\xbe\xe5\xa4\x87\xe5\x88\x86\xe7\xbb\x84')),
+            ],
+        ),
+        migrations.CreateModel(
             name='DeviceStatus',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
@@ -104,6 +111,7 @@ class Migration(migrations.Migration):
                 ('deviceID', models.IntegerField(verbose_name=b'\xe7\xbd\x91\xe7\xbb\x9c\xe8\xae\xbe\xe5\xa4\x87ID')),
                 ('deviceIP', models.GenericIPAddressField(protocol=b'ipv4', verbose_name=b'\xe7\xbd\x91\xe7\xbb\x9c\xe8\xae\xbe\xe5\xa4\x87IP')),
                 ('time', models.DateTimeField(auto_now=True, verbose_name=b'\xe7\xbd\x91\xe7\xbb\x9c\xe8\xae\xbe\xe5\xa4\x87\xe6\x9b\xb4\xe6\x96\xb0\xe6\x97\xb6\xe9\x97\xb4')),
+                ('group', models.ForeignKey(verbose_name=b'\xe7\xbd\x91\xe7\xbb\x9c\xe8\xae\xbe\xe5\xa4\x87\xe5\x88\x86\xe7\xbb\x84', to='website.DeviceGroup')),
                 ('status', models.ForeignKey(verbose_name=b'\xe7\xbd\x91\xe7\xbb\x9c\xe8\xae\xbe\xe5\xa4\x87\xe7\x8a\xb6\xe6\x80\x81', to='website.DeviceStatus')),
             ],
         ),
@@ -137,11 +145,21 @@ class Migration(migrations.Migration):
             name='ServerHost',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
-                ('addtime', models.DateTimeField(verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe6\xb7\xbb\xe5\x8a\xa0\xe6\x97\xb6\xe9\x97\xb4', auto_created=True)),
                 ('hostName', models.CharField(max_length=50, null=True, verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe5\x90\x8d\xe7\xa7\xb0')),
                 ('hostIP', models.GenericIPAddressField(protocol=b'ipv4', verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xbaIP')),
                 ('updatetime', models.DateTimeField(auto_now=True, verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe6\x9b\xb4\xe6\x96\xb0\xe6\x97\xb6\xe9\x97\xb4')),
-                ('status', models.ForeignKey(verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe7\x8a\xb6\xe6\x80\x81', to='website.DeviceStatus')),
+                ('addtime', models.DateTimeField(auto_now_add=True, verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe6\xb7\xbb\xe5\x8a\xa0\xe6\x97\xb6\xe9\x97\xb4')),
+                ('group', models.ForeignKey(related_name='group_group', verbose_name=b'\xe6\x9c\x8d\xe5\x8a\xa1\xe5\x99\xa8\xe5\x88\x86\xe7\xbb\x84', to='website.DeviceGroup')),
+                ('status', models.ForeignKey(related_name='status_status', verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe7\x8a\xb6\xe6\x80\x81', to='website.DeviceStatus')),
+            ],
+        ),
+        migrations.CreateModel(
+            name='ServerHostRecord',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('updateTime', models.DateTimeField(auto_now_add=True, verbose_name=b'\xe6\x97\xb6\xe9\x97\xb4')),
+                ('hostIP_id', models.ForeignKey(related_name='hostIP_hostIP', verbose_name=b'\xe6\x9c\x8d\xe5\x8a\xa1\xe5\x99\xa8IP', to='website.ServerHost', null=True)),
+                ('status_id', models.ForeignKey(related_name='status1_status1', verbose_name=b'\xe6\x9c\x8d\xe5\x8a\xa1\xe5\x99\xa8\xe7\x8a\xb6\xe6\x80\x81', to='website.DeviceStatus')),
             ],
         ),
         migrations.CreateModel(

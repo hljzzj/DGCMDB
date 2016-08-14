@@ -114,7 +114,7 @@ STATICFILES_DIRS = (
 )
 
 #日志
-LOGGING = {
+"""LOGGING = {
     'version': 1,
     'disable_existing_loggers': True,
     'formatters': {
@@ -189,4 +189,4 @@ LOGGING = {
             'propagate': True
         },
     }
-}
+}"""

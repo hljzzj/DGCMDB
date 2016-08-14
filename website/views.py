@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response
 
 from website.forms import AdduserForm,ApplyCertificateForm,AddServerHostForm
 from website.models import Asset
-from website.models import UserInfo,ApplyCateInfo,ServerHost
+from website.models import UserInfo,ApplyCateInfo,ServerHost,ServerHostRecord
 
 
 # Create your views here.
@@ -91,8 +91,14 @@ def AssetList(request):
 
 #运维功能
 def ServerHostList(request):
-    serverhost_list = ServerHost.objects.all()
-    return render_to_response('ServerHostList.html',{'data':serverhost_list})
+    serverhost_list = ServerHost.objects.all()[0:9]
+    return render_to_response('ServerHostList.html',{'serverhostlist':serverhost_list})
+
+def ServerHostID(request,hostID):
+    print hostID
+    serverhost_id = ServerHostRecord.objects.filter(hostIP_id=hostID)[0:9]
+    serverhost_name = ServerHost.objects.filter(id=hostID)
+    return render_to_response('ServerHost.html',{'serverhostnamedata':serverhost_name,'serverhostdata':serverhost_id})
 
 def AddServerHost(request):
     addserverhostForm = AddServerHostForm()
