@@ -83,8 +83,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME':'dgcmdb',
         'USER':'dgcmdb',
-        'PASSWORD':'xt*bbvfhp200451',
-        'HOST':'113.59.61.225',
+        'PASSWORD':'Dzga@110',
+        'HOST':'127.0.0.1',
 
 
     }
@@ -94,9 +94,9 @@ DATABASES = {
 # Internationalization
 # https://docs.djangoproject.com/en/1.8/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'zh-CN'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'Asia/Shanghai'
 
 USE_I18N = True
 

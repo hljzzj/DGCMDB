@@ -5,7 +5,7 @@ from django.shortcuts import render_to_response
 
 from website.forms import AdduserForm,ApplyCertificateForm,AddServerHostForm
 from website.models import Asset
-from website.models import UserInfo,ApplyCateInfo,ServerHost,ServerHostRecord
+from website.models import UserInfo,ApplyCateInfo,ServerHostList,ServerHostRecord
 
 
 # Create your views here.
@@ -91,13 +91,13 @@ def AssetList(request):
 
 #运维功能
 def ServerHostList(request):
-    serverhost_list = ServerHost.objects.all()[0:9]
+    serverhost_list = ServerHostList.objects.all()[0:9]
     return render_to_response('ServerHostList.html',{'serverhostlist':serverhost_list})
 
 def ServerHostID(request,hostID):
     print hostID
     serverhost_id = ServerHostRecord.objects.filter(hostIP_id=hostID)[0:9]
-    serverhost_name = ServerHost.objects.filter(id=hostID)
+    serverhost_name = ServerHostList.objects.filter(id=hostID)
     return render_to_response('ServerHost.html',{'serverhostnamedata':serverhost_name,'serverhostdata':serverhost_id})
 
 def AddServerHost(request):
@@ -108,10 +108,11 @@ def AddServerHost(request):
             name = request.POST.get('name',None)
             ip = request.POST.get('ip',None)
 
-            result1 = ServerHost.objects.filter(hostName=name).count()
-            result2 = ServerHost.objects.filter(hostIP=ip).count()
+            result1 = ServerHostList.objects.filter(hostName=name).count()
+            result2 = ServerHostList.objects.filter(hostIP=ip).count()
             if result1 == 0 and result2 == 0:
-                ServerHost.objects.create(hostName=name,hostIP=ip)
+                ServerHostList.objects.create(hostName=name,hostIP=ip)
+                return render_to_response('AddServerHost.html', {'form': addserverhostForm, 'status': '添加成功'})
             elif result1 != 0:
                 return render_to_response('AddServerHost.html', {'form': addserverhostForm,'status':'主机名存在'})
             else:
