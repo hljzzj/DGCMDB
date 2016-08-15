@@ -84,7 +84,7 @@ DATABASES = {
         'NAME':'dgcmdb',
         'USER':'dgcmdb',
         'PASSWORD':'Dzga@110',
-        'HOST':'127.0.0.1',
+        'HOST':'113.59.61.225',
 
 
     }
