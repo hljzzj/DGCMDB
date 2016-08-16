@@ -129,7 +129,7 @@ class DeviceStatus(models.Model):
 class DeviceGroup(models.Model):
     group = models.CharField(max_length=50,verbose_name='设备分组',null=True)
 #运维
-class ServerHostList(models.Model):     #服务器
+class ServerHost(models.Model):     #服务器
     hostName = models.CharField(max_length=50,verbose_name='主机名称',null=True)
     hostIP = models.GenericIPAddressField(protocol='ipv4',verbose_name='主机IP')
     status = models.ForeignKey(DeviceStatus,related_name='status_status',verbose_name='主机状态',null=True)
@@ -139,7 +139,7 @@ class ServerHostList(models.Model):     #服务器
 
 class ServerHostRecord(models.Model):     #服务器记录
     #hostName_id = models.ForeignKey(ServerHost,related_name='hostName_hostName',verbose_name='服务器名字',null=True)
-    hostIP = models.ForeignKey(ServerHostList,related_name='hostIP_hostIP',verbose_name='服务器IP',null=True)
+    hostIP = models.ForeignKey(ServerHost,related_name='hostIP_hostIP',verbose_name='服务器IP',null=True)
     status = models.ForeignKey(DeviceStatus,related_name='status1_status1',verbose_name='服务器状态')
     updateTime = models.DateTimeField(auto_now_add=True,verbose_name='时间')
 
