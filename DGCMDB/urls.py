@@ -15,13 +15,13 @@ Including another URLconf
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from activator import process
-from website.views import index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList,ServerHostList,\
-    AddServerHost,ServerHostID
+from website.views import Index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList,ServerHostList,AddServerHost,ServerHostID,AddWorkGroup,AddThreeNetwork
 admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$',index,name='index'),
+    url(r'^$',Index),
+    url(r'^Index/$',Index),
     #('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<page>(\d+))/(?P<id>(\d+))/$', process),
     #('^(?P<app>(\w+))/(?P<function>(\w+))/(?P<id>(\d+))/$', process),
     #('^(?P<app>(\w+))/(?P<function>(\w+))/$', process),
@@ -38,5 +38,7 @@ urlpatterns = patterns('',
     url(r'^ServerHostList/$',ServerHostList),
     url(r'^AddServerHost/$',AddServerHost),
     url(r'^ServerHost/(?P<hostID>\d*)/$',ServerHostID),
+    url(r'^AddWorkGroup/$',AddWorkGroup),
+    url(r'^AddThreeNetwork/$',AddThreeNetwork),
 )
 

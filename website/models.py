@@ -150,3 +150,12 @@ class NetworkDevice(models.Model):  #网络设备
     status = models.ForeignKey(DeviceStatus, verbose_name='网络设备状态')
     time = models.DateTimeField(auto_now=True, verbose_name='网络设备更新时间')
     group = models.ForeignKey(DeviceGroup,verbose_name='网络设备分组')
+
+class ThreeNetwork(models.Model):
+    workgroupID = models.ForeignKey(WorkGroup,verbose_name='workgroupID')
+    vlan = models.CharField(max_length=5,verbose_name='Vlan')
+    netmask = models.GenericIPAddressField(protocol='ipv4',verbose_name='Netmask')
+    gateway = models.GenericIPAddressField(protocol='ipv4',verbose_name='gateway')
+    
+
+

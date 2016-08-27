@@ -24,4 +24,14 @@ class ApplyCertificateForm(forms.Form):
 class AddServerHostForm(forms.Form):
     name = forms.CharField(max_length=50)
     ip = forms.GenericIPAddressField(error_messages={'invalid': 'IP地址格式错误'})
+class AddWorkGroupForm(forms.Form):
+    name = forms.CharField(max_length=50)
+
+class AddThreeNetworkForm(forms.Form):
+    vlan = forms.CharField(max_length=5)
+    netmask = forms.GenericIPAddressField(error_messages={'invalid': 'IP地址格式错误'})
+    gateway = forms.GenericIPAddressField(error_messages={'invalid': 'IP地址格式错误'})
+    workgroup = forms.CharField(max_length=50)
+
+
 

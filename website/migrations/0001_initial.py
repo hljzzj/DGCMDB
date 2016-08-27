@@ -142,7 +142,7 @@ class Migration(migrations.Migration):
             ],
         ),
         migrations.CreateModel(
-            name='ServerHostList',
+            name='ServerHost',
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('hostName', models.CharField(max_length=50, null=True, verbose_name=b'\xe4\xb8\xbb\xe6\x9c\xba\xe5\x90\x8d\xe7\xa7\xb0')),
@@ -158,7 +158,7 @@ class Migration(migrations.Migration):
             fields=[
                 ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
                 ('updateTime', models.DateTimeField(auto_now_add=True, verbose_name=b'\xe6\x97\xb6\xe9\x97\xb4')),
-                ('hostIP', models.ForeignKey(related_name='hostIP_hostIP', verbose_name=b'\xe6\x9c\x8d\xe5\x8a\xa1\xe5\x99\xa8IP', to='website.ServerHostList', null=True)),
+                ('hostIP', models.ForeignKey(related_name='hostIP_hostIP', verbose_name=b'\xe6\x9c\x8d\xe5\x8a\xa1\xe5\x99\xa8IP', to='website.ServerHost', null=True)),
                 ('status', models.ForeignKey(related_name='status1_status1', verbose_name=b'\xe6\x9c\x8d\xe5\x8a\xa1\xe5\x99\xa8\xe7\x8a\xb6\xe6\x80\x81', to='website.DeviceStatus')),
             ],
         ),
@@ -177,6 +177,15 @@ class Migration(migrations.Migration):
                 ('walkiemodel', models.IntegerField(verbose_name=b'\xe5\xaf\xb9\xe8\xae\xb2\xe6\x9c\xba\xe5\x9e\x8b\xe5\x8f\xb7')),
                 ('number', models.IntegerField(verbose_name=b'\xe5\xaf\xb9\xe8\xae\xb2\xe6\x9c\xba\xe6\x95\xb0\xe9\x87\x8f')),
                 ('storagetime', models.DateTimeField(verbose_name=b'\xe5\x85\xa5\xe5\xba\x93\xe6\x97\xb6\xe9\x97\xb4')),
+            ],
+        ),
+        migrations.CreateModel(
+            name='ThreeNetwork',
+            fields=[
+                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('vlan', models.CharField(max_length=5, verbose_name=b'Vlan')),
+                ('netmask', models.GenericIPAddressField(protocol=b'ipv4', verbose_name=b'Netmask')),
+                ('gateway', models.GenericIPAddressField(protocol=b'ipv4', verbose_name=b'gateway')),
             ],
         ),
         migrations.CreateModel(
@@ -258,6 +267,11 @@ class Migration(migrations.Migration):
             model_name='userinfo',
             name='typeId',
             field=models.ForeignKey(to='website.UserType'),
+        ),
+        migrations.AddField(
+            model_name='threenetwork',
+            name='workgroupID',
+            field=models.ForeignKey(verbose_name=b'workgroupID', to='website.WorkGroup'),
         ),
         migrations.AddField(
             model_name='applycateinfo',
