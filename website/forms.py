@@ -28,10 +28,10 @@ class AddWorkGroupForm(forms.Form):
     name = forms.CharField(max_length=50)
 
 class AddThreeNetworkForm(forms.Form):
-    vlan = forms.CharField(max_length=5)
-    netmask = forms.GenericIPAddressField(error_messages={'invalid': 'IP地址格式错误'})
-    gateway = forms.GenericIPAddressField(error_messages={'invalid': 'IP地址格式错误'})
-    workgroup = forms.CharField(max_length=50)
+    vlan = forms.CharField(max_length=5,error_messages={'invalid': 'Vlan错误'})
+    netmask = forms.GenericIPAddressField(error_messages={'invalid': 'netmask错误'})
+    gateway = forms.GenericIPAddressField(error_messages={'invalid': 'gateway错误'})
+    workgroup = forms.CharField(max_length=50,error_messages={'invalid': 'ID错误'})
 
 
 

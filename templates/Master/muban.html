@@ -5,6 +5,12 @@
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
     <title>儋州公安通信运维综合管理平台</title>
     <link rel="stylesheet" href="/static/CSS/bootstrap.css">
+    <!--[if lte IE 6]>
+    <!-- bsie css 补丁文件 -->
+    <link rel="stylesheet" type="text/css" href="/static/CSS/bootstrap-ie6.min.css">
+    <!-- bsie 额外的 css 补丁文件 -->
+    <link rel="stylesheet" type="text/css" href="/static/CSS/ie.css">
+    <![endif]-->
     {% block css %}
     {% endblock %}
 </head>
@@ -76,6 +82,10 @@
     </div>
 <!--底部内容开始-->
     <div>公用底部内容</div>
+    <!--[if lte IE 6]>
+    <!-- bsie js 补丁只在IE6中才执行 -->
+    <script type="text/javascript" src="/static/JS/bootstrap-ie.js"></script>
+    <![endif]-->
     <script src="/static/JS/jquery-3.0.0.js"></script>
     <script src="/static/JS/bootstrap.js"></script>
 </body>

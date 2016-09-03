@@ -144,18 +144,24 @@ class ServerHostRecord(models.Model):     #服务器记录
     updateTime = models.DateTimeField(auto_now_add=True,verbose_name='时间')
 
 
-class NetworkDevice(models.Model):  #网络设备
+class NetworkDevice(models.Model):  # 网络设备
     deviceID = models.IntegerField(verbose_name='网络设备ID')
     deviceIP = models.GenericIPAddressField(protocol='ipv4', verbose_name='网络设备IP')
     status = models.ForeignKey(DeviceStatus, verbose_name='网络设备状态')
     time = models.DateTimeField(auto_now=True, verbose_name='网络设备更新时间')
     group = models.ForeignKey(DeviceGroup,verbose_name='网络设备分组')
 
-class ThreeNetwork(models.Model):
-    workgroupID = models.ForeignKey(WorkGroup,verbose_name='workgroupID')
+class ThreeNetwork(models.Model):   # 三级网
+    workgroupID = models.ForeignKey(WorkGroup,related_name='threenetid_workgroupname',verbose_name='部门ID')
     vlan = models.CharField(max_length=5,verbose_name='Vlan')
-    netmask = models.GenericIPAddressField(protocol='ipv4',verbose_name='Netmask')
-    gateway = models.GenericIPAddressField(protocol='ipv4',verbose_name='gateway')
-    
+    netmask = models.GenericIPAddressField(protocol='ipv4',verbose_name='子网掩码')
+    gateway = models.GenericIPAddressField(protocol='ipv4',verbose_name='网关')
+    statusID = models.ForeignKey(DeviceStatus,related_name='threenetwork_devicestatusid',verbose_name='状态ID')
+
+class ThreeNetworkRecord(models.Model):     # 三级网记录
+    vlanID = models.ForeignKey(ThreeNetwork,related_name='record_threenetworkid',verbose_name='VlanID')
+    flowinpu = models.IntegerField(verbose_name='5分钟输入率')
+    flowout = models.IntegerField(verbose_name='5分钟输出率')
+    errorpack = models.IntegerField(verbose_name='错误包')
 
 

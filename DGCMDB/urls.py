@@ -15,7 +15,7 @@ Including another URLconf
 from django.conf.urls import patterns,include, url
 from django.contrib import admin
 from activator import process
-from website.views import Index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList,ServerHostList,AddServerHost,ServerHostID,AddWorkGroup,AddThreeNetwork
+from website.views import Index,ApplyCertificate,Login,Adduser,Adddata,Deldata,Update,Getdata,AssetList,ServerHostList,AddServerHost,ServerHostID,AddWorkGroup,AddThreeNetwork,ThreeNetworkID
 admin.autodiscover()
 
 urlpatterns = patterns('',
@@ -40,5 +40,6 @@ urlpatterns = patterns('',
     url(r'^ServerHost/(?P<hostID>\d*)/$',ServerHostID),
     url(r'^AddWorkGroup/$',AddWorkGroup),
     url(r'^AddThreeNetwork/$',AddThreeNetwork),
+    url(r'^ThreeNetwork/(?P<threenetworkID>\d*)/$',ThreeNetworkID),
 )
 

@@ -2,20 +2,20 @@
 from django.http.response import HttpResponse
 from django.shortcuts import render
 from django.shortcuts import render_to_response
-
+import chartit
 from website.forms import AdduserForm,ApplyCertificateForm,AddServerHostForm,AddWorkGroupForm,AddThreeNetworkForm
 from website.models import Asset
-from website.models import UserInfo,ApplyCateInfo,ServerHost,ServerHostRecord,WorkGroup,ThreeNetwork
+from website.models import UserInfo,ApplyCateInfo,ServerHost,ServerHostRecord,WorkGroup,ThreeNetwork,ThreeNetworkRecord
 
 
 # Create your views here.
 
 
 def Index(request):
-    index_serverlist = ServerHost.objects.all()
+    #index_serverlist = ServerHost.objects.all()
     good_serverlist = ServerHost.objects.filter(status=1)
     bad_serverlist = ServerHost.objects.filter(status=2)
-    return render_to_response('index.html',{'indexserverhost':index_serverlist,'goodserver':good_serverlist,'badserver':bad_serverlist})
+    return render_to_response('index.html',{'goodserver':good_serverlist,'badserver':bad_serverlist})
 def ApplyCertificate(request):
     applycertificateForm = ApplyCertificateForm()
     if request.method == 'POST':
@@ -95,8 +95,11 @@ def ServerHostList(request):
     return render_to_response('ServerHostList.html',{'serverhostlist':serverhost_list})
 
 def ServerHostID(request,hostID):
-    serverhost_id = ServerHostRecord.objects.filter(hostIP_id=hostID)
+    hostidsend = ServerHostRecord.objects.filter(hostIP_id=hostID).count()
+    hostidstart = hostidsend -  100
+    serverhost_id = ServerHostRecord.objects.filter(hostIP_id=hostID).order_by('-id')[0:100]
     serverhost_name = ServerHost.objects.filter(id=hostID)
+
     return render_to_response('ServerHost.html',{'serverhostnamedata':serverhost_name,'serverhostdata':serverhost_id})
 
 def AddServerHost(request):
@@ -146,17 +149,30 @@ def AddThreeNetwork(request):
         if form.is_valid():
             vlan = request.POST.get('vlan',None)
             gateway = request.POST.get('gateway',None)
-            netmask = request.POst.get('netmask',None)
-            workgroupID = request.POST.get('workgroupID',None)
+            netmask = request.POST.get('netmask',None)
+            workgroupID = request.POST.get('workgroup',None)
             result1 = ThreeNetwork.objects.filter(vlan=vlan).count()
             result2 = ThreeNetwork.objects.filter(gateway=gateway).count()
-            if result1 == 0 and result2 == 0:
+            result3 = ThreeNetwork.objects.filter(workgroupID=workgroupID).count()
+            print workgroupID
+            if result1 == 0 and result2 == 0 and result3 ==0:
                 ThreeNetwork.objects.create(vlan=vlan,gateway=gateway,netmask=netmask,workgroupID_id=workgroupID)
                 return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm, 'status': '添加成功','threenetworklist': threenetwork_list,'workgrouplist':workgroup_list})
             elif result1 != 0:
-                return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm,'status':'部门名存在','threenetworklist': threenetwork_list,'workgrouplist':workgroup_list})
+                return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm,'status':'VLAN已存在','threenetworklist': threenetwork_list,'workgrouplist':workgroup_list})
+            elif result2 != 0:
+                return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm, 'status': '网关已存在','threenetworklist': threenetwork_list,'workgrouplist':workgroup_list})
             else:
-                return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm, 'status': 'IP已存在','threenetworklist': threenetwork_list,'workgrouplist':workgroup_list})
+                return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm, 'status': '该部门已存在',
+                                                                   'threenetworklist': threenetwork_list,
+                                                                   'workgrouplist': workgroup_list})
+        else:
+            print form
+            temp = form.errors.as_data()
+            print temp
     return render_to_response('AddThreeNetwork.html', {'form': addthreenetworkForm,'threenetworklist': threenetwork_list,'workgrouplist':workgroup_list})
 
-
+def ThreeNetworkID(request,threenetworkID):
+    #threenetwork_id = ThreeNetworkRecord.objects.filter(hostIP_id=hostID)
+    threenetwork_name = ThreeNetworkRecord.objects.filter(id=threenetworkID)
+    return render_to_response('ThreeNetwork.html',{'threenetworkdata':threenetwork_name})
